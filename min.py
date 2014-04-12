@@ -12,7 +12,7 @@ def minimum_x(_x):
             if _x <= x:
                 return _func(x)
             else:
-                raise ValueError("%s must be less or equal to than %s" % (x, _x))
+                raise ValueError("%s must be less or equal to than %s" % (_x, x))
         return minimum_x_wrapper
 
     return wrap
